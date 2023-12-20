@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>My Registration</title>
+    </head>
+    <body>
+        <forms>
+            <label>First Name</label>
+            <input type="text" name="fName" id="first_name"/>
+            <br/>
+            <br/>
+            <label>Last Name</label>
+            <input type="text" name="lName" id="last_name"/>
+            <br/>
+            <br/>
+            <button onclick="getMyData()">Click Me</button>
+        </forms>
+        <script type="text/javascript">
+            function getMyData()
+            {
+                let myFirstName = document.getElementById("first_name").value;
+                document.getElementById("last_name").value = myFirstName;
+                alert(myFirstName);
+            }
+        </script>
+    </body>
+</html>
