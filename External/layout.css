@@ -1,0 +1,23 @@
+div{
+    background-color: #FF0000;
+    color:#FFFFFF;
+}
+
+#qtreeBG,#qtree_data{
+    background-color: black;
+    padding: 10px;
+    color:#FFFFFF;
+}
+
+/* #qtree_data
+{
+    background-color: aquamarine;
+    font-size: 35px;
+    border: 1px solid #FF0000;
+} */
+
+.qtreeStyle
+{
+    background-color: aqua;
+    color:#FF0000
+}

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>My First Javascript</title>
+    </head>
+    <body>
+
+        <div id="myText"></div>
+
+
+        <br/>
+    <br/>
+    <!-- Text Box -->
+    <label>First Name</label>
+    <input type="text" id="firstName" placeholder="Enter your firstname"/>
+    <br/>    
+    <br/>    
+    <label>Last Name</label>
+    <input type="text" id="lastName" placeholder="Enter Your Last Name"/>
+    
+    <br/>
+    <br/>
+
+    <button onclick="validateMyData()">Validate Data</button>
+
+
+        <button onclick="printText()">Print My Text</button>
+
+    <script type="text/javascript">
+
+        function validateMyData()
+        {   
+            
+            let firstName = document.getElementById("firstName").value;
+           
+            if(firstName === "")
+            {
+                alert("Please enter a valid first name");
+                //document.getElementById("firstName").value = "Kuzhandhairaj";
+                return;
+                
+            }
+
+            if(firstName.length < 3)
+            {
+                alert("First Name length should be greater than 2");
+                return;
+            }
+
+            let secondName = document.getElementById("lastName").value;
+            if(secondName === "")
+            {
+                alert("Please enter a valid last name");
+            }
+          // alert(firstName);
+        }
+
+        function printText()
+        {
+            document.getElementById("myText").innerText = "Hello Developers";
+            alert("Yeee!. I am hitted");
+        }
+
+        //alert("Welcome Developers");
+        //document.getElementById("myText").innerText = "Hello Developers";
+    </script>    
+    </body>
+</html>
