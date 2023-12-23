@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My Registration</title>
+    </head>
+    <body>
+        <forms>
+            <label>First Number</label>
+            <input type="text" name="fName" id="first_number"/>
+            <br/>
+            <br/>
+            <label>Second Number</label>
+            <input type="text" name="lName" id="second_number"/>
+            <br/>
+            <br/>
+            <button onclick="getResult()">Click Me</button>
+        </forms>
+        <script type="text/javascript">
+                function getResult()
+                {
+                    let firstNumber = document.getElementById("first_number").value;
+                    let secondNumber = document.getElementById("second_number").value;
+                    let result = parseInt(firstNumber)+parseInt(secondNumber);
+                    alert(result);
+                }
+        </script>
+    </body>
+</html>
